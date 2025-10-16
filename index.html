@@ -1,0 +1,49 @@
+<!doctype html>
+
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Menú Hamburguesa</title>
+
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+
+    <body>
+        <header>
+            <h1 style="text-align: center; padding: 20px;">No te Drogues mi chavo</h1>
+        </header>
+        <button class="hamburger-icon" id="menu-btn">☰</button>
+
+        <nav class="menu-nav" id="menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="tipos_drogas.html">Tipos de Drogas </a></li>
+                <li><a href="consecuencias.html">Consecuencias</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <!-- Contenido Principal -->
+        
+
+
+        <footer>&copy 2024 No te drogues amiwito :<
+        </footer>
+        
+
+        <!-- Script para la funcionalidad del menú -->
+        
+        <script>
+            const menuBtn = document.getElementById('menu-btn');
+            const menu = document.getElementById('menu');
+
+            menuBtn.addEventListener('click', () => {
+                // Añade o quita la clase 'active' al menú.
+                // El CSS maneja la transición de oculto (translateX(100%)) a visible (translateX(0)).
+                menu.classList.toggle('active');
+            });
+        </script>
+        
+    </body>
+</html>

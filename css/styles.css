@@ -1,0 +1,88 @@
+
+            body {
+                margin: 0;
+                font-family: 'Times New Roman', Times, serif;
+            }
+
+            header {
+                background-color: #f0f0f0;
+                padding: 10px 0;
+                text-align: center;
+            }
+            header h1 {
+                margin: 0;
+                font-size: 24px;
+            }
+            
+
+            /* Estilo del Ícono de la Hamburguesa */
+            .hamburger-icon {
+                display: block; /* Muestra el botón */
+                position: fixed;
+                /* Lo posiciona en la esquina superior derecha */
+                 /* Lo mantiene visible aunque se haga scroll */
+                top: 15px;
+                right: 15px;
+                z-index: 9999; /* Asegura que esté por encima de otros elementos */
+                background: none;
+                border: none;
+                font-size: 30px;
+                cursor: pointer;
+                color: #333;
+            }
+
+            /* Estilo del Menú de Navegación */
+            .menu-nav {
+                /* Posiciona el menú fuera de la pantalla por defecto */
+                position: fixed;
+                top: 0;
+                right: 0;
+                width: 250px; /* Ancho del menú al desplegarse */
+                height: 100%;
+                background-color: #333;
+                z-index: 999;
+                /* TRANSICIÓN: Oculta el menú deslizando fuera de la vista */
+                transform: translateX(100%); /* Lo mueve 100% de su ancho a la derecha */
+                transition: transform 0.3s ease-in-out; /* Agrega una animación suave */
+            }
+
+            /* Estado ACTIVO: Esta clase se añade con JavaScript para mostrar el menú */
+            .menu-nav.active {
+                transform: translateX(0); /* Lo devuelve a su posición original (visible) */
+            }
+
+            /* Estilos de los elementos de la lista */
+            .menu-nav ul {
+                list-style: none;
+                padding: 70px 0 0 0; /* Espacio superior para el encabezado/ícono */
+                margin: 0;
+            }
+
+            .menu-nav li a {
+                display: block;
+                padding: 15px 20px;
+                text-decoration: none;
+                color: white;
+                border-bottom: 1px solid #555;
+            }
+
+            .menu-nav li a:hover {
+                background-color: #555;
+            }
+            body.img{
+
+                background-size: cover;
+                background-attachment: fixed;
+            }
+            p{
+                text-align: center;
+                font-size: 20px;
+            }
+            footer {
+                background-color: #f0f0f0;
+                text-align: center;
+                padding: 10px 0;
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+            }
