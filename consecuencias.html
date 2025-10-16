@@ -26,6 +26,13 @@
 
         <!-- Contenido Principal -->
         
+        <div class="main" id="main">
+
+            <p>haaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+
+
+
+        </div>
 
 
         <footer>&copy 2024 No te drogues amiwito :<
@@ -37,13 +44,15 @@
         <script>
             const menuBtn = document.getElementById('menu-btn');
             const menu = document.getElementById('menu');
+            const main = document.getElementById('main')
 
             menuBtn.addEventListener('click', () => {
+                menu.classList.toggle('active')
+
                 // Añade o quita la clase 'active' al menú.
                 // El CSS maneja la transición de oculto (translateX(100%)) a visible (translateX(0)).
-                menu.classList.toggle('active');
+                main.classList.toggle('active')
             });
         </script>
-        
     </body>
 </html>
